@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Υπηρεσίες — Alex Digital Designer</title>
+<meta name="description" content="Δημιουργία ιστοσελίδων, social media και γραφιστικός σχεδιασμός για επιχειρήσεις και επαγγελματίες.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="Λογότυπο Alex Digital Designer">
+      <span class="brand-text">Alex <span>Digital</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">Σχετικά</a>
+      <a href="services.html" class="active">Υπηρεσίες</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="contact.html">Επικοινωνία</a>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Αρχική</a> / Υπηρεσίες</p>
+    <h1>Τρεις πυλώνες, μία ενιαία ταυτότητα</h1>
+    <p class="lede">Ό,τι χρειάζεται η ψηφιακή και έντυπη παρουσία της επιχείρησής σας, κάτω από μία στέγη.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <p class="num">01</p>
+        <h3>Δημιουργία Ιστοσελίδων</h3>
+        <p>Σύγχρονες, επαγγελματικές ιστοσελίδες, πλήρως responsive, βελτιστοποιημένες για SEO και ταχύτητα — για επιχειρήσεις, επαγγελματίες και καταστήματα.</p>
+        <a href="websites.html">Διαβάστε περισσότερα<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="pillar reveal">
+        <p class="num">02</p>
+        <h3>Social Media</h3>
+        <p>Δημιουργία εταιρικών προφίλ, σχεδιασμός επαγγελματικού περιεχομένου και συνεχής διαχείριση για Instagram, Facebook και TikTok.</p>
+        <a href="social.html">Διαβάστε περισσότερα<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="pillar reveal">
+        <p class="num">03</p>
+        <h3>Γραφιστικός Σχεδιασμός</h3>
+        <p>Επαγγελματικές κάρτες, flyers, αφίσες, τρίπτυχα και κάθε προωθητικό ή εταιρικό υλικό χρειάζεται η επιχείρησή σας.</p>
+        <a href="graphics.html">Διαβάστε περισσότερα<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <a class="btn btn-primary" style="margin-top:44px;" href="contact.html">Ζητήστε προσφορά</a>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="foot-brand" href="index.html">
+        <img src="assets/logo-mark.png" alt="Alex Digital Designer">
+        <span>Alex Digital Designer</span>
+      </a>
+      <nav class="foot-links">
+        <a href="about.html">Σχετικά</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+    </div>
+    <div class="foot-tag">Αναδεικνύουμε την επιχείρησή σου — © 2026 Alex Digital Designer</div>
+  </div>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var els = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>

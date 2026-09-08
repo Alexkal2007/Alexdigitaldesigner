@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Γραφιστικός Σχεδιασμός — Alex Digital Designer</title>
+<meta name="description" content="Σχεδιασμός επαγγελματικών καρτών, flyers, αφισών, τρίπτυχων και εταιρικού υλικού.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="Λογότυπο Alex Digital Designer">
+      <span class="brand-text">Alex <span>Digital</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">Σχετικά</a>
+      <a href="services.html" class="active">Υπηρεσίες</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="contact.html">Επικοινωνία</a>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Αρχική</a> / Υπηρεσίες / Γραφιστικός Σχεδιασμός</p>
+    <h1>Γραφιστικός Σχεδιασμός</h1>
+    <p class="lede">Από την επαγγελματική κάρτα που δίνετε σε μια συνάντηση μέχρι την αφίσα μιας εκδήλωσης, κάθε κομμάτι έντυπου υλικού σχεδιάζεται ώστε να ταιριάζει με την υπόλοιπη ταυτότητά σας.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="print-grid">
+      <div class="print-item reveal"><h4>Επαγγελματικές κάρτες</h4><p>Σχεδιασμός business card, έτοιμο για εκτύπωση, που μένει στο μυαλό.</p></div>
+      <div class="print-item reveal"><h4>Flyers / Φυλλάδια</h4><p>Για προσφορές, υπηρεσίες ή προϊόντα — καθαρά και ευανάγνωστα.</p></div>
+      <div class="print-item reveal"><h4>Αφίσες</h4><p>Για εκδηλώσεις, προωθητικές ενέργειες ή προβολή σε φυσικό χώρο.</p></div>
+      <div class="print-item reveal"><h4>Τρίπτυχα</h4><p>Καθαρή δομή για παρουσίαση υπηρεσιών ή προϊόντων σε έντυπη μορφή.</p></div>
+      <div class="print-item reveal"><h4>Διαφημιστικό υλικό</h4><p>Σχεδιασμός για κάθε προωθητική σας ανάγκη, ψηφιακή ή έντυπη.</p></div>
+      <div class="print-item reveal"><h4>Εταιρικό υλικό</h4><p>Ενιαία εικόνα σε κάθε έντυπο της επιχείρησής σας.</p></div>
+    </div>
+    <p style="color:var(--muted);margin-top:36px;max-width:60ch;line-height:1.6;">Όλα τα αρχεία παραδίδονται έτοιμα για εκτύπωση, στις προδιαγραφές που χρειάζεται το τυπογραφείο ή ο συνεργάτης σας.</p>
+    <a class="btn btn-primary" style="margin-top:28px;" href="contact.html">Ζητήστε προσφορά για έντυπο υλικό</a>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="foot-brand" href="index.html">
+        <img src="assets/logo-mark.png" alt="Alex Digital Designer">
+        <span>Alex Digital Designer</span>
+      </a>
+      <nav class="foot-links">
+        <a href="about.html">Σχετικά</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+    </div>
+    <div class="foot-tag">Αναδεικνύουμε την επιχείρησή σου — © 2026 Alex Digital Designer</div>
+  </div>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var els = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>

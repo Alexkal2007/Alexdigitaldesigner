@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Επικοινωνία — Alex Digital Designer</title>
+<meta name="description" content="Επικοινωνήστε με το Alex Digital Designer τηλεφωνικά ή μέσω email.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="Λογότυπο Alex Digital Designer">
+      <span class="brand-text">Alex <span>Digital</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">Σχετικά</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="contact.html">Επικοινωνία</a>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Αρχική</a> / Επικοινωνία</p>
+    <h1>Ας ξεκινήσουμε το επόμενο project σας</h1>
+    <p class="lede">Πείτε μου λίγα λόγια για την επιχείρησή σας και τι χρειάζεστε — ιστοσελίδα, social media ή έντυπο υλικό — και θα επικοινωνήσω μαζί σας άμεσα.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="max-width:640px;">
+    <div class="contact-card reveal" style="border-color:var(--line); background:var(--white);">
+      <div class="contact-row" style="border-color:var(--line);">
+        <a class="value" href="tel:+306988697309" style="display:flex;flex-direction:column;color:var(--navy);">
+          <span class="label" style="color:var(--muted);">Τηλέφωνο — πατήστε για κλήση</span>698 869 7309
+        </a>
+        <a href="tel:+306988697309" class="go" style="border-color:var(--line);color:var(--blue);" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="contact-row" style="border-color:var(--line);">
+        <a class="value" href="mailto:digitaldesignerbyalex@gmail.com" style="display:flex;flex-direction:column;color:var(--navy);">
+          <span class="label" style="color:var(--muted);">Email — πατήστε για αποστολή</span>digitaldesignerbyalex@gmail.com
+        </a>
+        <a href="mailto:digitaldesignerbyalex@gmail.com" class="go" style="border-color:var(--line);color:var(--blue);" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="cta-row" style="margin-top:32px;margin-bottom:0;">
+      <a class="btn btn-primary" href="tel:+306988697309">Καλέστε τώρα</a>
+      <a class="btn btn-ghost-light" href="mailto:digitaldesignerbyalex@gmail.com">Στείλτε email</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="foot-brand" href="index.html">
+        <img src="assets/logo-mark.png" alt="Alex Digital Designer">
+        <span>Alex Digital Designer</span>
+      </a>
+      <nav class="foot-links">
+        <a href="about.html">Σχετικά</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+    </div>
+    <div class="foot-tag">Αναδεικνύουμε την επιχείρησή σου — © 2026 Alex Digital Designer</div>
+  </div>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var els = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>

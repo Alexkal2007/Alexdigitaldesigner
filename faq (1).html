@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Συχνές Ερωτήσεις — Alex Digital Designer</title>
+<meta name="description" content="Απαντήσεις σε συχνές ερωτήσεις σχετικά με τις υπηρεσίες του Alex Digital Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="Λογότυπο Alex Digital Designer">
+      <span class="brand-text">Alex <span>Digital</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="about.html">Σχετικά</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="faq.html" class="active">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm" href="contact.html">Επικοινωνία</a>
+    </div>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">Αρχική</a> / FAQ</p>
+    <h1>Συχνές Ερωτήσεις</h1>
+    <p class="lede">Απαντήσεις σε ό,τι συνήθως ρωτούν οι πελάτες πριν ξεκινήσουμε.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="faq-list reveal">
+      <details>
+        <summary>Πόσο χρόνο χρειάζεται μια ιστοσελίδα;</summary>
+        <p>Εξαρτάται από το μέγεθος του project. Μια μονοσέλιδη σελίδα ολοκληρώνεται πιο σύντομα από μια πολυσέλιδη ιστοσελίδα. Πριν ξεκινήσουμε, θα έχετε ένα ξεκάθαρο χρονοδιάγραμμα.</p>
+      </details>
+      <details>
+        <summary>Αναλαμβάνετε και τη διαχείριση social media σε μόνιμη βάση;</summary>
+        <p>Ναι. Μπορώ να αναλάβω τόσο τη δημιουργία των εταιρικών προφίλ όσο και τη συνεχή διαχείριση και ενημέρωσή τους.</p>
+      </details>
+      <details>
+        <summary>Μπορώ να παραγγείλω μόνο έντυπο υλικό, χωρίς ιστοσελίδα;</summary>
+        <p>Φυσικά. Κάρτες, φυλλάδια, αφίσες και τρίπτυχα μπορούν να σχεδιαστούν ανεξάρτητα, ανάλογα με τις ανάγκες σας.</p>
+      </details>
+      <details>
+        <summary>Πώς ξεκινάμε τη συνεργασία;</summary>
+        <p>Με ένα τηλεφώνημα ή ένα email συζητάμε τις ανάγκες σας, σας δίνω πρόταση και χρονοδιάγραμμα, και ξεκινάμε το project.</p>
+      </details>
+      <details>
+        <summary>Παραδίδετε τα αρχεία έτοιμα για εκτύπωση;</summary>
+        <p>Ναι, κάθε σχέδιο έντυπου υλικού παραδίδεται στις προδιαγραφές που χρειάζεται το τυπογραφείο σας.</p>
+      </details>
+    </div>
+    <a class="btn btn-ghost-light faq-cta" href="contact.html">Έχετε άλλη ερώτηση; Επικοινωνήστε</a>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <a class="foot-brand" href="index.html">
+        <img src="assets/logo-mark.png" alt="Alex Digital Designer">
+        <span>Alex Digital Designer</span>
+      </a>
+      <nav class="foot-links">
+        <a href="about.html">Σχετικά</a>
+        <a href="services.html">Υπηρεσίες</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </nav>
+    </div>
+    <div class="foot-tag">Αναδεικνύουμε την επιχείρησή σου — © 2026 Alex Digital Designer</div>
+  </div>
+</footer>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    var els = document.querySelectorAll('.reveal');
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>
